@@ -1,0 +1,16 @@
+Data Availability Statement Template
+
+Option A: Full dataset and code are shared as supplementary material
+
+The data and code supporting the findings of this study are provided in the supplementary material accompanying this article.
+
+Option B: Processed data and code are shared, while raw images are available upon request
+
+The processed experimental data, data split files, labels, and code supporting the findings of this study are provided as supplementary material. Due to project-related and site-related restrictions, the complete raw coal-gangue image dataset is not publicly available. The full dataset may be obtained from the corresponding author upon reasonable request.
+
+Option C: Data and code are deposited in an external repository
+
+The data and code supporting the findings of this study are openly available in [Repository Name] at [DOI or persistent URL].
+
+Recommended option for this manuscript:
+Option B is recommended if the complete field images or mining-site data cannot be publicly released.

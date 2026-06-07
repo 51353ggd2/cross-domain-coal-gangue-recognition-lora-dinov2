@@ -1,0 +1,18 @@
+﻿Evaluation summary
+==================
+Model type: mlp_layernorm_gelu
+Data root: F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\过往dataset汇总\现场dataset\test
+Class names: ['coal', 'gangue']
+
+accuracy: 0.886091
+precision_macro: 0.886151
+recall_macro: 0.884388
+f1_binary: 0.874627
+f1_macro: 0.885130
+
+Confusion matrix
+================
+Rows = true labels, columns = predicted labels
+true\pred,coal,gangue
+coal,2523,262
+gangue,326,2051

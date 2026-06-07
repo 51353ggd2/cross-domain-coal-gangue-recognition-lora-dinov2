@@ -1,0 +1,15 @@
+Generated 02_Data_Splits from 01_Dataset.zip
+
+Object-level image counts:
+- Source_Domain_Lab_Enhanced / coal: 30
+- Source_Domain_Lab_Enhanced / gangue: 30
+- Source_Domain_Lab_Raw / coal: 30
+- Source_Domain_Lab_Raw / gangue: 30
+- Target_Domain_Field_Raw / coal: 30
+- Target_Domain_Field_Raw / gangue: 30
+
+Protocol file row counts:
+- P1_source_in_domain.csv: 60 rows
+- P2_target_in_domain.csv: 60 rows
+- P3_direct_cross_domain.csv: 60 rows
+- P4_auxiliary_joint_training.csv: 120 rows

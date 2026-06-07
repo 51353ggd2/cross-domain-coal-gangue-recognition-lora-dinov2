@@ -1,0 +1,27 @@
+LoRA-DINOv2 code cleaning report
+
+Actions performed:
+- Recovered garbled ZIP filenames.
+- Renamed Chinese directories and filenames into English.
+- Converted Chinese path strings into English path strings.
+- Translated Chinese runtime messages into English where detected.
+- Removed Python comment tokens from source code files.
+- Preserved result files, CSV files, PDF files, and PNG figures.
+
+Remaining Chinese text entries detected: 13
+Remaining full-line Python comments detected: 0
+
+Remaining Chinese entries:
+detect_lora_dinov2_dataset.py:34: DATA_ROOT = r"F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\过往dataset汇总\现场dataset\test"
+detect_lora_dinov2_deepmlp_ln_gelu.py:26: DATA_ROOT = r"F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\过往dataset汇总\现场dataset\test"
+inference_time_linear.py:16: LORA_ADAPTER_DIR = r"/3.30_DINOv2/LoRA_DINOv2/权重file/field/runs\best_lora_adapter"
+train_lora_dinov2_mlp.py:157:     data_root = r"F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\实验室dataset_4_14暗化处理"
+train_lora_dinov2_mlp_bn_gelu.py:165:     data_root = r"F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\实验室dataset_4_14暗化处理"
+train_lora_dinov2_mlp_layernorm_gelu.py:165:     data_root = r"F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\4_14+现场dataset"
+train_lora_dinov2_mlp_layernorm_gelu_visualization_pipeline.py:346:     data_root = r"F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\4_14+现场dataset"
+train_lora_dinov2_deepmlp_layernorm_gelu.py:171:     data_root = r"F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\过往dataset汇总\现场dataset"
+train_lora_dinov2_linear.py:146:     data_root = r"F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\过往dataset汇总\现场dataset"
+confusion_matrix/detect_lora_dinov2_with_predictions_and_confusion_matrix.py:43: DATA_ROOT = r"F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\过往dataset汇总\现场dataset\test"
+confusion_matrix/linear_csv/predictions_linear.csv:2: F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\过往dataset汇总\现场dataset\test\coal\004004_jpg.rf.f95dd1a11bc9fb9e93d69dbb211b630b_2.jpg,coal,coal,1
+confusion_matrix/p4/predictions_mlp_layernorm_gelu.csv:2: F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\过往dataset汇总\现场dataset\test\coal\004004_jpg.rf.f95dd1a11bc9fb9e93d69dbb211b630b_2.jpg,004004_jpg.rf.f95dd
+confusion_matrix/p4/summary_mlp_layernorm_gelu.txt:4: Data root: F:\00_Coal_Gangue_Recognition_Paper\3.30_DINOv2\dataset\过往dataset汇总\现场dataset\test

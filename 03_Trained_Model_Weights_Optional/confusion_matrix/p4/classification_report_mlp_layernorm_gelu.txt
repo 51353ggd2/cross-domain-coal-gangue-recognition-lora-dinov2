@@ -1,0 +1,8 @@
+﻿              precision    recall  f1-score   support
+
+        coal     0.8856    0.9059    0.8956      2785
+      gangue     0.8867    0.8629    0.8746      2377
+
+    accuracy                         0.8861      5162
+   macro avg     0.8862    0.8844    0.8851      5162
+weighted avg     0.8861    0.8861    0.8860      5162

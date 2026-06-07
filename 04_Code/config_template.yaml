@@ -1,0 +1,50 @@
+project:
+  name: dual_domain_coal_gangue_recognition
+  task: object_level_binary_classification
+  random_seed: 42
+
+paths:
+  dataset_root: ../01_Dataset/Dataset_To_Be_Added
+  split_dir: ../02_Data_Splits
+  label_file: ../03_Annotations_and_Labels/labels_template.csv
+  output_dir: ../05_Result_Data/Generated_Outputs
+
+domains:
+  source_raw: Source_Domain_Lab_Raw
+  source_aligned: Source_Domain_Lab_Aligned
+  source_enhanced: Source_Domain_Lab_Enhanced
+  target_raw: Target_Domain_Field_Raw
+
+classes:
+  coal: 0
+  gangue: 1
+
+model:
+  backbone: facebook/dinov2-base
+  input_size: 224
+  lora_rank: 16
+  lora_alpha: 32
+  lora_dropout: 0.1
+  lora_target_modules:
+    - query
+    - key
+    - value
+  classifier_head: layernorm_gelu_mlp
+  hidden_dim: 512
+  head_dropout: 0.3
+
+training:
+  batch_size: 4
+  epochs: 20
+  optimizer: AdamW
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  use_amp: true
+  selection_metric: f1_score
+
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score

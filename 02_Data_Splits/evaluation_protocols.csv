@@ -1,0 +1,5 @@
+protocol,training_set,validation_set,test_set,purpose
+P1,Source_Domain_Lab_Raw,Source_Domain_Lab_Raw,Source_Domain_Lab_Raw,Source-domain in-domain evaluation
+P2,Target_Domain_Field_Raw,Target_Domain_Field_Raw,Target_Domain_Field_Raw,Target-domain in-domain evaluation
+P3,Source_Domain_Lab_Raw,Source_Domain_Lab_Raw,Target_Domain_Field_Raw,Direct source-to-target transfer evaluation
+P4,Target_Domain_Field_Raw + Source_Domain_Lab_Enhanced,Target_Domain_Field_Raw,Target_Domain_Field_Raw,Target-domain evaluation with auxiliary source-domain samples
